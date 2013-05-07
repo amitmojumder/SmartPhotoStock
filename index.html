@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<title>Welecome to SmartPhotoStock</title>
+<meta name="description" content="">
+<meta name="keyword" content="">
+<meta name="author" content="Amit Mojumder">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+           <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+         <![endif]-->
+
+</head>
+<body>
+<div class="top-bar">
+  <div class="container">
+    <h1 class="brand">SmartStockPhoto<a href="#"><img src="img/logo.png" width="208" height="50" alt="Smart Stock Photo Logo"></a></h1>
+    <ul class="header-links">
+      <li><a href="#sign-up-modal" data-toggle="modal">Register</a> <span class="divider">/</span></li>
+      <li><a href="#sign-in-modal" data-toggle="modal" class="">Sign In</a></li>
+    </ul>
+  </div>
+  <!--container ends--> 
+</div>
+<!--top-bar ends--> 
+
+<!-- Sign Up Modal -->
+<div id="sign-up-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h5 id="myModalLabel"><img src="img/member-icon.png" alt="member icon" class="member-icon">Member Registration</h5>
+  </div>
+  <div class="modal-body">
+    <form class="sign-up">
+      <label for="username">Username</label>
+      <input type="text" name="username">
+      <label for="password">Password</label>
+      <input type="password" name="password">
+      <label for="repeat-password">Repeat password</label>
+      <input type="password" name="repeat-password">
+      <label for="email">Email</label>
+      <input type="text" name="email">
+      <label for="capcha">Capcha</label>
+      <input type="text" name="capcha">
+    </form>
+    <p>Already have an account? <a class="btn-link">Sign in</a> now!</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn">Register</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+<!--Sign Up modal ends--> 
+
+<!-- Sign In Modal -->
+<div id="sign-in-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h5 id="myModalLabel"><img src="img/login-icon.png" alt="login icon" class="login-icon">Member Login</h5>
+  </div>
+  <div class="modal-body">
+    <form class="sign-up">
+      <label for="username">Username</label>
+      <input type="text" name="username">
+      <label for="password">Password</label>
+      <input type="password" name="password">
+      <label for="remember-me">
+        <input type="checkbox" name="repeat-password">
+        Remember Me </label>
+    </form>
+    <p>Don't have an account yet? <a class="btn-link">Register</a> now!</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn">Log In</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+<!--Sign In modal ends-->
+<div class="bg-image-section"> 
+  <!--<img src="img/master-bg-image.jpg" alt="main bg image">-->
+  <div class="container search-tag-wrap">
+    <form class="search-box">
+      <input type="text" value="Seach your image here" class="search">
+      <button class="btn btn-large search-btn" type="submit">Submit</button>
+    </form>
+    <ul class="tags">
+      <li><a href="#" class="tag">All Categories</a></li>
+      <li><a href="#" class="tag">Health &amp; Beauty</a></li>
+      <li><a href="#" class="tag">Finance &amp; Law</a></li>
+      <li><a href="#" class="tag">Entertainment</a></li>
+      <li><a href="#" class="tag">Technology</a></li>
+      <li><a href="#" class="tag">Life Style</a></li>
+      <li><a href="#" class="tag">General</a></li>
+      <li><a href="#" class="tag">Creativity</a></li>
+      <li><a href="#" class="tag">Business &amp; Edu</a></li>
+      <li><a href="#" class="tag">Family &amp; Personal</a></li>
+      <li><a href="#" class="tag">Home Improvement</a></li>
+      <li><a href="#" class="tag">Green</a></li>
+      <li><a href="#" class="tag">Food</a></li>
+      <li><a href="#" class="tag">SEO &amp; SM</a></li>
+      <li><a href="#" class="tag">Cars</a></li>
+      <li><a href="#" class="tag">Sports</a></li>
+      <li><a href="#" class="tag">Traveling</a></li>
+      <li><a href="#" class="tag">Animals</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container main-content"> ,
+  <div class="span12">
+    <h2>Latest images</h2>
+    <div class="section-divider"></div>
+  </div>
+  <ul>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/sports" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/fashion" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/nightlife" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/transport" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/people" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/nature" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/foods" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/animal" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/business" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/cats" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/sports" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/fashion" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/nightlife" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/transport" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/people" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/nature" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/foods" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/animal" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/business" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/cats" class="img-polaroid" alt="image"></a></li>
+  </ul>
+</div>
+<div class="pagination pagination-centered">
+  <ul>
+    <li class="disabled"><a href="#">Prev</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</div>
+<!--pagination ends here-->
+
+<div class="row">
+  <div class="container footer">
+    <div class="span12">
+      <div class="span6">
+        <ul class="nav nav-pills">
+          <li class="active"> <a href="#">Home</a> </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#contact-us-modal" data-toggle="modal">Contact Us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="span2 offset3">
+        <ul class="nav social inline">
+          <li><a href="#" class="facebook"></a></li>
+          <li><a href="#" class="twitter"></a></li>
+          <li><a href="#" class="pinterest"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4 offset4">
+        <p>SmartStockPhoto brought to you by:</p>
+        <p><a href="#"><img src="img/mbg-logo.png" alt="MyBlogGuest Logo"></a></p>
+        <p>Copyright © 2013 SmartStockPhoto - all rights reserved</p>
+        <p>This is a free collection of images for bloggers: If you are a blogger, feel free to use it in any of your post, but please link to the image page!</p>
+      </div>
+    </div>
+  </div>
+  <!--footer ends here--> 
+  
+  <!-- Contact Us Modal -->
+  <div id="contact-us-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h5 id="myModalLabel"><img src="img/contact-icon.png" alt="contact icon" class="contact-icon">Contact Us</h5>
+    </div>
+    <div class="modal-body">
+      <form class="sign-up">
+        <label for="email">Email</label>
+        <input type="text" name="email">
+        <label for="message">Message</label>
+        <textarea></textarea>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button class="btn">Submit</button>
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+  </div>
+  <!--Contact Us Modal ends here--> 
+  
+</div>
+</body>

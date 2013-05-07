@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<title>Welecome to SmartPhotoStock</title>
+<meta name="description" content="">
+<meta name="keyword" content="">
+<meta name="author" content="Amit Mojumder">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+           <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+         <![endif]-->
+
+</head>
+<body>
+<div class="top-bar">
+  <div class="container">
+    <h1 class="brand">SmartStockPhoto<a href="#"><img src="img/logo.png" width="208" height="50" alt="Smart Stock Photo Logo"></a></h1>
+    <ul class="header-links">
+      <li><a href="#sign-up-modal" data-toggle="modal">Register</a> <span class="divider">/</span></li>
+      <li><a href="#sign-in-modal" data-toggle="modal" class="">Sign In</a></li>
+    </ul>
+  </div>
+  <!--container ends--> 
+</div>
+<!--top-bar ends--> 
+
+<!-- Sign Up Modal -->
+<div id="sign-up-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h5 id="myModalLabel"><img src="img/member-icon.png" alt="member icon" class="member-icon">Member Registration</h5>
+  </div>
+  <div class="modal-body">
+    <form class="sign-up">
+      <label for="username">Username</label>
+      <input type="text" name="username">
+      <label for="password">Password</label>
+      <input type="password" name="password">
+      <label for="repeat-password">Repeat password</label>
+      <input type="password" name="repeat-password">
+      <label for="email">Email</label>
+      <input type="text" name="email">
+      <label for="capcha">Capcha</label>
+      <input type="text" name="capcha">
+    </form>
+    <p>Already have an account? <a class="btn-link">Sign in</a> now!</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn">Register</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+<!--Sign Up modal ends-->
+
+<!-- Sign In Modal -->
+<div id="sign-in-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h5 id="myModalLabel"><img src="img/login-icon.png" alt="login icon" class="login-icon">Member Login</h5>
+  </div>
+  <div class="modal-body">
+    <form class="sign-up">
+      <label for="username">Username</label>
+      <input type="text" name="username">
+      <label for="password">Password</label>
+      <input type="password" name="password">
+      <label for="remember-me">
+        <input type="checkbox" name="repeat-password">
+        Remember Me </label>
+    </form>
+    <p>Don't have an account yet? <a class="btn-link">Register</a> now!</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn">Log In</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+<!--Sign In modal ends-->
+
+<div class="bg-image-section"> 
+  <!--<img src="img/master-bg-image.jpg" alt="main bg image">-->
+  <div class="container search-tag-wrap">
+    <form class="search-box">
+      <input type="text" value="Seach your image here" class="search">
+      <button class="btn btn-large search-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<!--signup modal ends here-->
+<div class="container main-content main-content-about">
+  <div class="span12 main-title">
+    <h2>Name of the image</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="span12">
+    <div class="span4 single-image"> <img src="img/single-image.jpg" alt="image name" class="img-polaroid"> </div>
+    <div class="span6 image-des">
+      <p><b>Imge Description:</b>Porttitor parturient non massa in risus, tempor! Sit dapibus, vel. A in, in purus, odio odio? Aliquet, urna tincidunt turpis ultricies rhoncus et augue, cursus rhoncus ac turpis, vel turpis sociis aliquam augue! Quis dictumst porta cras magna magna. Augue ultrices vut.</p>
+      <p><b>Imge category:</b> Home Improvement (Architecture, construction, interior design, plumbing, etc)</p>
+      <a href="#single-image-modal" class="btn btn-large btn-inverse btn-download" data-toggle="modal"><img src="img/dl-icon.png" alt="download icon" class="modal-icon">Image Info &amp; Download</a> </div>
+  </div>
+  <div class="span12 single-img-tag">
+    <p><b>Tags:</b> Lake,   Pond,   River,   River,   Bank,   Parking,   Swan, Luck   inhabitant,  nature,  wildlife,   birds,   spring,   walking,   feeding,    
+      wild,   life,   environment</p>
+  </div>
+  <div class="span12">
+    <h2>Related images</h2>
+    <div class="section-divider"></div>
+  </div>
+  <ul>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/sports" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/fashion" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/nightlife" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/transport" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/people" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/nature" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/foods" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/animal" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/business" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/cats" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/sports" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/fashion" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/nightlife" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/transport" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/people" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/nature" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/foods" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/animal" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/business" class="img-polaroid" alt="image"></a></li>
+    <li><a href="#" ><img src="http://lorempixel.com/210/120/cats" class="img-polaroid" alt="image"></a></li>
+  </ul>
+</div>
+<div class="pagination pagination-centered">
+  <ul>
+    <li class="disabled"><a href="#">Prev</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</div>
+<!--pagination ends here-->
+
+<div class="row">
+  <div class="container footer">
+    <div class="span12">
+      <div class="span6">
+        <ul class="nav nav-pills">
+          <li class="active"> <a href="#">Home</a> </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#contact-us-modal" data-toggle="modal">Contact Us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="span2 offset3">
+        <ul class="nav social inline">
+          <li><a href="#" class="facebook"></a></li>
+          <li><a href="#" class="twitter"></a></li>
+          <li><a href="#" class="pinterest"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4 offset4">
+        <p>SmartStockPhoto brought to you by:</p>
+        <p><a href="#"><img src="img/mbg-logo.png" alt="MyBlogGuest Logo"></a></p>
+        <p>Copyright © 2013 SmartStockPhoto - all rights reserved</p>
+        <p>This is a free collection of images for bloggers: If you are a blogger, feel free to use it in any of your post, but please link to the image page!</p>
+      </div>
+    </div>
+  </div>
+  <!--footer ends here--> 
+  
+  <!-- Contact Us Modal -->
+  <div id="contact-us-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h5 id="myModalLabel"><img src="img/contact-icon.png" alt="contact icon" class="contact-icon">Contact Us</h5>
+    </div>
+    <div class="modal-body">
+      <form class="sign-up">
+        <label for="email">Email</label>
+        <input type="text" name="email">
+        <label for="message">Message</label>
+        <textarea></textarea>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button class="btn">Submit</button>
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+  </div>
+  <!--Contact Us Modal ends here--> 
+  
+  <!-- Single Image Modal -->
+  <div id="single-image-modal" class="modal-single-image hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h5 id="myModalLabel"><img class="modal-icon" src="img/dl-icon.png" alt="Download Icon">Select the size and download the image</h5>
+    </div>
+    <div class="modal-body">
+      <div class="img-section pull-left"> <img src="img/modal-image.jpg" alt="Download Image Title" class="img-polaroid">
+        <p>Copy-paste this code to link to this image:</p>
+        <textarea><a href='http://smartphotostock.com/view/orchids-greenery'>Orchids greenery - Free image for blogs</a></textarea>
+      </div>
+      <!--img-section ends here-->
+      <div class="img-download pull-right">
+        <h4>Select image size</h4>
+        <table class="table" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td>Square</td>
+              <td>75 x 75</td>
+              <td><a href="#">Download</a></td>
+            </tr>
+            <tr>
+              <td>Large Square</td>
+              <td>150 x 150</td>
+              <td><a href="#">Download</a></td>
+            </tr>
+            <tr>
+              <td>Thumbnail</td>
+              <td>100 x 75</td>
+              <td><a href="#">Download</a></td>
+            </tr>
+            <tr>
+              <td>Small</td>
+              <td>240 x 180</td>
+              <td><a href="#">Download</a></td>
+            </tr>
+            <tr>
+              <td>Small 320</td>
+              <td>320 x 240</td>
+              <td><a href="#">Download</a></td>
+            </tr>
+            <tr>
+              <td>Medium</td>
+              <td>500 x 375</td>
+              <td><a href="#">Download</a></td>
+            </tr>
+            <tr>
+              <td>Medium 640</td>
+              <td>640 x 480</td>
+              <td><a href="#">Download</a></td>
+            </tr>
+            <tr>
+              <td>Large</td>
+              <td>1024 x 768</td>
+              <td><a href="#">Download</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="license">
+          <p class="text-warning">This image is published under <b>Creative Commons license</b>. You are free to use it but please link back to <b>smartphotostock.com</b></p>
+        </div>
+      </div>
+      <!--img-download ends here--> 
+    </div>
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+  </div>
+  <!--single image modal ends here--> 
+  
+</div>
+</body>

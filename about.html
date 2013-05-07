@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<title>Welecome to SmartPhotoStock</title>
+<meta name="description" content="">
+<meta name="keyword" content="">
+<meta name="author" content="Amit Mojumder">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+           <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+         <![endif]-->
+
+</head>
+<body>
+<div class="top-bar">
+  <div class="container">
+    <h1 class="brand">SmartStockPhoto<a href="#"><img src="img/logo.png" width="208" height="50" alt="Smart Stock Photo Logo"></a></h1>
+    <ul class="header-links">
+      <li><a href="#sign-up-modal" data-toggle="modal">Register</a> <span class="divider">/</span></li>
+      <li><a href="#sign-in-modal" data-toggle="modal" class="">Sign In</a></li>
+    </ul>
+  </div>
+  <!--container ends--> 
+</div>
+<!--top-bar ends--> 
+
+<!-- Sign Up Modal -->
+<div id="sign-up-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h5 id="myModalLabel"><img src="img/member-icon.png" alt="member icon" class="member-icon">Member Registration</h5>
+  </div>
+  <div class="modal-body">
+    <form class="sign-up">
+      <label for="username">Username</label>
+      <input type="text" name="username">
+      <label for="password">Password</label>
+      <input type="password" name="password">
+      <label for="repeat-password">Repeat password</label>
+      <input type="password" name="repeat-password">
+      <label for="email">Email</label>
+      <input type="text" name="email">
+      <label for="capcha">Capcha</label>
+      <input type="text" name="capcha">
+    </form>
+    <p>Already have an account? <a class="btn-link">Sign in</a> now!</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn">Register</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+<!--Sign Up modal ends--> 
+
+<!-- Sign In Modal -->
+<div id="sign-in-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h5 id="myModalLabel"><img src="img/login-icon.png" alt="login icon" class="login-icon">Member Login</h5>
+  </div>
+  <div class="modal-body">
+    <form class="sign-up">
+      <label for="username">Username</label>
+      <input type="text" name="username">
+      <label for="password">Password</label>
+      <input type="password" name="password">
+      <label for="remember-me">
+        <input type="checkbox" name="repeat-password">
+        Remember Me </label>
+    </form>
+    <p>Don't have an account yet? <a class="btn-link">Register</a> now!</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn">Log In</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+<!--Sign In modal ends-->
+
+<div class="bg-image-section"> 
+  <!--<img src="img/master-bg-image.jpg" alt="main bg image">-->
+  <div class="container search-tag-wrap">
+    <form class="search-box">
+      <input type="text" value="Seach your image here" class="search">
+      <button class="btn btn-large search-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="container main-content-about"> ,
+  <div class="span12">
+    <h2>About Us</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="row">
+    <div class="span8">
+      <p>We've all been there; with a long blog post written and ready to publish, you need only a perfect image to accentuate your point for your readers. Unfortunately, while there are many millions of graphic aids available online, very few of them are legal to reuse, leaving us to choose between less-than-stellar imagery, or even no imagery at all.</p>
+      <p>That simply won't do, will it?</p>
+      <p>While textual content may provide the underpinning of the web, no blog post or internet article is complete without a bit of visual stimulation to go along with it, and that's where SmartPhotoStock.com comes in!</p>
+      <p>Many of us are talented writers, but there are fewer among us with the time and skill needed to come up with fantastic photographs and digital images, so we've taken it upon us to provide you with royalty-free, zero cost images for you to use on your website or blog. Here you'll find imagery covering a wide variety of people, places, things, and ideas, helping you to match the beautiful image in your mind with a beautiful photograph, every time you need one.</p>
+      <p>Working with photographers and bloggers alike, we aim to strike the perfect balance between them, serving both communities and helping each of their forms of artistic expression to collide to wonderful effect. The photos that you'll find here are entirely royalty-free, and are able to be used without restriction - we'd ask only that you link back to us here at SmartPhotoStock.com if you'd like to share the resource with others.</p>
+      <p><b>Welcome to SmartPhotoStock.com</b> - your online home for high quality, royalty-free photos and graphics for your next online project!</p>
+      <p><b>Smart Photostock was created by MyBlogGuest, the free community of guest bloggers.</b> Follow us on <b><a href="#">Twitter</a></b> and like us on <b><a href="#">Facebook</a></b></p>
+      <p>Please contact us if you have any questions</p>
+    </div>
+    <div class="span4"> <a href="index.html" class="banner"><img src="img/free-gallery-banner.jpg" alt="Free images banner"></a>
+      <div class="promo">
+        <p><img class="smart-photo-logo" src="img/logo.png" alt="SmartStockPhoto"></p>
+        <p>bought to you by</p>
+        <p><img class="mbg-logo" src="img/mbg-logo.png" alt="MyBlogGuest Logo"></p>
+        <p>The free community of guest bloggers</p>
+        <p><a href="http://myblogguest.com" target="_blank" class="btn btn-inverse">Visit Now</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="container footer">
+    <div class="span12">
+      <div class="span6">
+        <ul class="nav nav-pills">
+          <li class="active"> <a href="#">Home</a> </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#contact-us-modal" data-toggle="modal">Contact Us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="span2 offset3">
+        <ul class="nav social inline">
+          <li><a href="#" class="facebook"></a></li>
+          <li><a href="#" class="twitter"></a></li>
+          <li><a href="#" class="pinterest"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4 offset4">
+        <p>SmartStockPhoto brought to you by:</p>
+        <p><a href="#"><img src="img/mbg-logo.png" alt="MyBlogGuest Logo"></a></p>
+        <p>Copyright © 2013 SmartStockPhoto - all rights reserved</p>
+        <p>This is a free collection of images for bloggers: If you are a blogger, feel free to use it in any of your post, but please link to the image page!</p>
+      </div>
+    </div>
+  </div>
+  <!--footer ends here--> 
+  
+  <!-- Contact Us Modal -->
+  <div id="contact-us-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h5 id="myModalLabel"><img src="img/contact-icon.png" alt="contact icon" class="contact-icon">Contact Us</h5>
+    </div>
+    <div class="modal-body">
+      <form class="sign-up">
+        <label for="email">Email</label>
+        <input type="text" name="email">
+        <label for="message">Message</label>
+        <textarea></textarea>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button class="btn">Submit</button>
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+  </div>
+  <!--Contact Us Modal ends here--> 
+  
+</div>
+</body>
