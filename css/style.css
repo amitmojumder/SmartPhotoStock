@@ -2687,6 +2687,7 @@ Custom style for Smart Stock Photo
 	height: 26px;
 	line-height: 26px;
 	padding: 0 20px 0 23px;
+	padding-bottom:3px\9;
 	position: relative;
 	margin: 0 10px 10px 0;
 	text-decoration: none;
@@ -2736,9 +2737,12 @@ Custom style for Smart Stock Photo
 .search-box input[type=text] {
 	width: 718px;
 	height: 52px;
+	height: 37px\9;
+	padding-top:15px\9 !important; /* IE8 and below */ 
 	background: url(../img/search-icon.png) no-repeat 10px 10px #FFF;
 	padding: 0 0 0 39px;
 	margin: 15px 0 0 20px;
+	margin-top:19px\9;
 	-webkit-box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
 	box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, .5);
 	border: 0;
@@ -2754,6 +2758,7 @@ Custom style for Smart Stock Photo
 .search-box .search-btn {
 	height: 54px;
 	margin: 13px 0 0 0;
+	margin-top:19px\9;
 }
 .main-content {
 	background-color: #FFF;
@@ -2781,6 +2786,7 @@ Custom style for Smart Stock Photo
 	display: inline;
 	float: left;
 	margin-right: 13px;
+	margin-right: 10px\9;
 	margin-bottom: 13px;
 }
 .main-content ul li:nth-child(4n+4) {
